@@ -4,7 +4,7 @@
 
 Clone the git repository into local device
 
-### cd Eye-Care
+### `cd Eye-Care`
 Move into the repository
 
 Create changes on the local device in cloned repository.
