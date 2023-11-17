@@ -1,0 +1,10 @@
+pip install numpy
+pip install keras
+pip install sklearn
+pip install pandas
+pip install Pillow
+pip install matplotlib
+pip install seaborn
+pip install OpenCV
+pip install tensorflow
+pip install tqdm 
