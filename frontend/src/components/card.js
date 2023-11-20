@@ -10,7 +10,7 @@ const Card = () => {
             <h2 className="card-title">Kulwinder Singh</h2>
             </div>
             <div>
-            <p1 className="card-text">Developer</p1>
+            <p className="card-text">Developer</p>
             <div className="socials">
                 <a>
                 <img src={facebook} />

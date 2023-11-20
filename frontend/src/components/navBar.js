@@ -54,7 +54,7 @@ const NavBarCompoent = () => {
  
 const StyledHeader = styled.header`
   width: 100%;
-  height: var(--header);
+  height: 8.5vh;
   padding: calc(var(--padding) / 2) var(--padding);
 
   position: relative;
@@ -63,21 +63,22 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   
 
   overflow: hidden;
-//   background:black;
-
+  background:white;
+  
   .logo {
     display: inline-block;
     height: 100%;
     overflow: hidden;
-    background:black;
+    background:whitesmoke;
     border-radius:60%;
-
+    
     object-fit: cover;
     cursor: pointer;
-
+    
     img {
       width: 100%;
       height: 100%;
@@ -93,44 +94,50 @@ const StyledHeader = styled.header`
       li {
         font-size: clamp(0.8rem, 2vw, 1rem);
         color: #fff;
+        color:black;
         cursor: pointer;
         transition: transform ease-out 200ms;
         &:hover {
           transform: scale(1.2);
         }
       }
-
+      
       @media only screen and (max-width: 500px) {
         display: none;
       }
     }
-
+    
     .button {
       margin-left: calc(2 * var(--padding));
       font-size: clamp(0.7rem, 1.5vw, 0.9rem);
       padding: calc(var(--padding) / 4);
       border-radius: 5px;
-      background: #fff;
-      color: #000;
-      transition: all ease-out 200ms;
+      background: rgb(30,148,165);
+      // color: #000;
+      color:black;
+      transition: all ease-in-out 200ms;
       position: relative;
+      // border:0.7px solid black;
       &::before {
         content: "";
         position: absolute;
         top: 50%;
         left: calc(-1 * var(--padding));
         display: block;
-
+        
         width: 2px;
         height: 70%;
         background: #fff;
+        color:white;
         transform: translateY(-50%);
       }
       &:hover {
+        color:black;
+        // background:black;
         background:#9be5aa;
       }
     }
-
+    
     a button::before {
       display: none;
     }
@@ -140,7 +147,7 @@ const StyledHeader = styled.header`
     .logo {
       height: 90%;
     }
-
+    
     nav {
       ul {
         display: none;

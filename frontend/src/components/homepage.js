@@ -16,8 +16,9 @@ const HomePage = () => {
  
 const StyledHomeMain = styled.main`
   width: 100%;
-  height: calc(100vh - var(--header));
+  height: 70vh;
   padding: calc(var(--padding) * 2);
+  background:white;
 
   display: flex;
   justify-content: space-between;
@@ -50,7 +51,7 @@ const StyledHomeMain = styled.main`
 
     h1 {
       font-size: 2.3em;
-      font-weight: 905;
+      font-weight: lighter;
       color:black;
       font-family: 'Times New Roman', Times, serif;
 
@@ -58,6 +59,8 @@ const StyledHomeMain = styled.main`
     p {
       font-size: 0.33em;
       line-height: 1.5;
+      color:rgb(30,148,165);
+      font-weight:bold;
     }
 
     button {
