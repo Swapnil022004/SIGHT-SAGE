@@ -9,7 +9,7 @@ const TestPageComponent = () => {
                 <br/> */}
                 <h4>ONLINE, FAST & SECURE</h4>
                 {/* <br/> */}
-                <p>Specialist ocular image reporting service. We provide rapid scan interpretation by highly experienced Consultant Ophthalmologists for early diagnosis of sight threatening eye conditions</p>
+                <p>Specialist ocular image reporting service. We provide rapid scan interpretation by highly acurate Machine Learning Model for early diagnosis of sight threatening eye conditions</p>
                 </div>
         </div>
      );

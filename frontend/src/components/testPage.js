@@ -2,15 +2,19 @@ import  axios from "axios";
 import { useState } from "react";
 import downarrow from "../assets/down-arrow.png"
 import swal from "sweetalert"
+import REQUEST_URL from "../Utils";
+import {useNavigate} from "react-router-dom"
+import GetCookie from "../Hooks/getCookie";
 
 const VideoPageCompoent = () => {
     const [file, setFile] = useState()
+    const navigate=useNavigate()
     const scanImage=async(e)=>{
         e.preventDefault();
         const formData= new FormData()
          formData.append('file',file);  
         const resp=await axios.post("http://localhost:5000/",formData)
-        console.log(resp.data)
+        // console.log(resp.data.data[0])
         if(resp.data.predicted=="false"){
             swal({
                 title: "Failed",
@@ -21,7 +25,20 @@ const VideoPageCompoent = () => {
             })
         }
         else{
-            
+            const reportData={
+                Token:GetCookie(),
+                prediction:resp?.data?.data[0]
+            }
+            console.log(reportData)
+            const documentCreated=await axios.post(`${REQUEST_URL}/report/create`,reportData)
+            swal({
+                title: "Success",
+                text: "Report Created",
+                icon: "success",
+            }).then(()=>{
+                // window.location.reload(false);
+                navigate("/reporthistory")
+            })
         }
     }
     

@@ -15,7 +15,10 @@ const NavBarCompoent = () => {
         {/* {type === "HOME" && ( */}
           <ul>
             <li>
-              <a href="#history">HISTORY</a> 
+              <a href="/reportHistory">HISTORY</a> 
+            </li>
+            <li>
+              <a href="/doctorList">BOOK APPOINTMENT</a> 
             </li>
             <li>
               <a href="#ourteam">OUR TEAM</a>

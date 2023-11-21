@@ -17,6 +17,10 @@ app.use(express.urlencoded({extended:false}))
 require("./connection/db_connection")
 
 app.use("/user",require("./routes/loginAndSignupRoute"))
+app.use("/report",require("./routes/reportRoute"))
+app.use("/payment",require("./routes/paymentroutes"))
+app.use('/doctor',require('./routes/doctorroutes'))
+
 
 app.listen(PORT,()=>{
     console.log(`server running on port ${PORT}`);

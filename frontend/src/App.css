@@ -10,6 +10,7 @@
     --text: #e9e0e0;
     --headingFont: "Amaranth", sans-serif;
     --normalFont: "Open Sans", sans-serif;
+    background-color: white;
   }
   html {
     user-select: none;
@@ -59,7 +60,7 @@
   }
 
   .ourteam{
-    height:100vh;
+    height:90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -82,30 +83,42 @@
     width: 100%;
     height: 10%;
     font-size: 100px;;
-    color: black;
+    color: rgb(30,148,165);;
     font-family:'Times New Roman', Times, serif;
+    
 
   }
 
   .Cardcontainer{
     margin: 2%;
     height: 85%;
-    width: 78%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
+  .doctorContent{
+    width: 60%;
+    height: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
 .card{
     border: 1px solid hs1(0,0%,80%);
     border-radius:15%;
     /* box-shadow:5px 5px 5px hsla(0,0%,0%,0.1); */
     padding: 20px;
     margin:10px;
+    margin-left: 10%;
     text-align: center;
-    width: 20%;
+    width: 25%;
     padding: 0px;
-    height: 50%;
+    height: 60%;
     display: inline-block;
     display: flex;
     flex-direction: column;
@@ -122,9 +135,9 @@
 }
 .card:hover{
     transition: all 1s ease;
-    width: 21%;
+    width: 27%;
     background-color:transparent;
-    height: 51%;
+    height: 65%;
 }
 
 .card:hover .card-image{
@@ -596,5 +609,117 @@
     background-color: rgb(178, 224, 110);
 
   }
+
+
+  .reportHistory{
+    height: 100%;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reportContainer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+  }
+  .reportContainer h1{
+    color:#1f459e;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .reportCardContainer{
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.30);
+    padding: 10px;
+    width: 90%;
+  }
   
+  .reportCardFirst{
+    top:3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.reportCardsecond button{
+  border: 1px solid black;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+  padding: 9px;
+}
+.createdat{
+  font-weight: bold;
+  color: #1f459e;
+  font-size: larger;
+
+}
+
+.reportCardsecond .activebutton:hover{
+  /* font-weight: bold; */
+  font-weight: lighter;
+  background-color: #9be5aa;
+  /* border: none; */
+  padding: 11px;
+  color: black;
+}
+
+.reportcardHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.prediction{
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+}
+
+.reposrtBorder{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  border-left: 9px double black;
+  border-right: 9px double black;
+}
+
+.closedbutton{
+  background-color: red;
+  color: white;
+  /* height;  width: 100%; */
+}
+
+.closedbutton:hover{
+  background-color: red;
+  cursor:default;
+}
+
+.doctorContent h2{
+  font-size: xx-large;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+}
+.doctorContent h4{
+  font-weight: bold
+  
+}
+.doctorContent p{
+  line-height: 2;
+}
+
 

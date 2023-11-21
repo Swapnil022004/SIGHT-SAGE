@@ -28,7 +28,7 @@ const OurServiceCompoent = () => {
                         <img src="https://static.wixstatic.com/media/bc95b8_c130bf699b8f4a4faa04ba7ebcc6075a~mv2.png/v1/fill/w_90,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/x-men.png"></img>
                         </div>
                         <div className="diagramContent">
-                        <p>Scans and clinical information are interpreted by highly experienced Consultant Ophthalmologists within 48 hours.</p>
+                        <p>Uploaded Image is interpreted by highly accurate Machine Learning Model within seconds and it creates a report.</p>
                         </div>
                     </div>  
                     <div className="diagramComponent">

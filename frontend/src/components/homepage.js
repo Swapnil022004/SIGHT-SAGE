@@ -6,7 +6,7 @@ const HomePage = () => {
         <div className="content">
           <h1>Eyes See</h1>
           <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publis
+          Driven by a commitment to excellence, we strive to exceed expectations in every aspect of our practice.At Eyes See, our mission is to enhance and preserve the gift of sight As advocates for community well-being, we actively engage in outreach programs and educational initiatives to promote eye health awareness. We are committed to making a positive impact on the lives of individuals and the community at large.
           </p>
         </div>
         <img  alt="wartrade logo"  src={main}  className="wartradeLogo" />

@@ -71,9 +71,9 @@ const GetSpecificUserController=async (req,res)=>{
     try{
         // console.log("hell")
         console.log(req.body)
-        const {token}=req.body
-        if(!token) throw new Error("JWT token missing")
-        const user_id=jwt.verify(token,jwt_key).payload
+        const {Token}=req.body
+        if(!Token) throw new Error("JWT token missing")
+        const user_id=jwt.verify(Token,jwt_key).payload
         const UserDocument=await UserModel.findById(user_id)
         if(!UserDocument) throw new Error("User data not fetched")
         res.status(200).json({
