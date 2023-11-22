@@ -1,4 +1,4 @@
-const stripe =require("stripe")('sk_test_51LuJaySF8bC6SK7mS9wWSPfjPIwfwLH8uEJx5vAEizQqTi524CxGl7eye16rO7kDWweElM2V4pUuTD0yqwU4VS6f000jFAn4hO')
+const stripe =require("stripe")(process.env.STRIPE_KEY)
 
 const paymentCheckout=async(req,res)=>
 {
