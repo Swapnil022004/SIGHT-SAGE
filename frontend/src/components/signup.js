@@ -20,6 +20,7 @@ const SignUpCompoent = () => {
           Password
       })
       console.log(UserSingup);
+      navigate("/")
   }
 
   return ( 
@@ -63,7 +64,7 @@ const SignUpCompoent = () => {
           </form>
           <div className="loginfooter">
           <p>Already have an account?</p>
-            <a href="/login">Login</a>
+            <a href="/">Login</a>
           </div>
       </div>
     </div>

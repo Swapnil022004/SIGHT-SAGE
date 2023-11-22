@@ -88,7 +88,7 @@ const ReportHistory = () => {
         })}
       </div>
         </div>
-      )}
+      )}http://localhost:3000/dashboard
     </div>
   );
 };

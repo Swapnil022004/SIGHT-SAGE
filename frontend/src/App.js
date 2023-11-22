@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-      <Route exact path="/" element={<MainPageCompoennt />} />
-      <Route exact path="/login" element={<LoginComponent />} />
+      <Route exact path="/" element={<LoginComponent />} />
+      <Route exact path="/dashboard" element={<MainPageCompoennt />} />
       <Route exact path="/signup" element={<SignUpCompoent />} />
       <Route exact path="/taketest" element={< TestPageComponent/>} />
       <Route exact path="/reporthistory" element={< ReportHistory/>} />

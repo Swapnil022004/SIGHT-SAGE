@@ -5,6 +5,7 @@ import SetCookie from "../Hooks/setCookie";
 import GetCookie from "../Hooks/getCookie";
 import { useNavigate } from "react-router-dom";
 import main from "../assets/eyecarelogo.jpg"
+import swal from "sweetalert"
 const LoginComponent = () => {
   const navigate=useNavigate()
     const [Loginemail, setLoginemail] = useState("")
@@ -23,7 +24,7 @@ const LoginComponent = () => {
         console.log(GetCookie())
         console.log(UserLogin.data)
         if(UserLogin.data.logedin==true){
-            navigate("/")
+            navigate("/dashboard")
         }
     }
     const loginCheck=async()=>{
@@ -31,19 +32,18 @@ const LoginComponent = () => {
         const UserLogin=await axios.post(`${REQUEST_URL}/user/login`,{
             Token:GetCookie()
         })
-        // console.log(UserLogin.data.cookie);
-        SetCookie({value:UserLogin.data.cookie})
-        console.log(GetCookie())
-        console.log(UserLogin.data)
-        if(UserLogin.data.logedin==true){
-            if(UserLogin.data.role=="user"){
-                navigate("/")
-            }
-            else{
-                navigate("/admin")
-            }
-            
+        console.log(UserLogin);
+        if(UserLogin.data.loged==true){
+          SetCookie({value:UserLogin.data.cookie})
+          navigate("/dashboard")
+        }else{
+          swal({
+            title: "Failed",
+            text: "Failed to login",
+            icon: "error",
+        })
         }
+        
     }
     useEffect(()=>{
         loginCheck()
