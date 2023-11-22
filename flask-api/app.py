@@ -2,21 +2,20 @@ from flask import Flask, flash, request, redirect, url_for, render_template
 import urllib.request
 import os
 from werkzeug.utils import secure_filename
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import seaborn as sns 
-import cv2
+# import cv2
 from tensorflow import keras
 import tensorflow as tf 
-from tensorflow import keras
-from keras.applications import ResNet50
+# from keras.applications import ResNet50
 from pathlib import Path
-from tqdm import tqdm
-import PIL
-import matplotlib.pyplot as plt
+# from tqdm import tqdm
+# import PIL
+# import matplotlib.pyplot as plt
 import os
 from flask import make_response
 print("Imported Successfully")
